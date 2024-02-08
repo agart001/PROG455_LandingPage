@@ -9,9 +9,10 @@
 
   </head>
   <body>
-    <div id="app" class=".container" style="border: .1rem solid green;">
-        <header role="banner" class="header position-sticky d-block p-1" style="border: .1rem solid black;">
-            <div class="d-inline-flex flex-row align-items-center">
+    <div id="app" style="border: .1rem solid green;">
+
+        <header role="banner" class="header sticky-top overflow-visible p-1 w-100 z-3" style="background-color: gray;">
+            <div class="d-flex flex-row align-items-center">
                 <div class="p-2" style="border: .1rem solid red;">
                     logo
                 </div>
@@ -24,30 +25,42 @@
                 <div class="p-2">
                     Library
                 </div>
-                <div class="d-inline-flex flex-row align-items-center">
-                    <div class="p-2 col-8" style="border: .1rem solid red;">
+                <div class="d-flex flex-row align-items-center gap-3 px-2" style="background-color: gray;">
+                    <div class="p-2 col-6" style="border: .1rem solid red;">
                         search bar
                     </div>
-                    <div class="p-2 col-4">
+                    <div class="col-2 text-nowrap px-1">
                         Try Next Pro
                     </div>
-                    <div class="p-2 col-3">
+                    <div class="col-2 text-nowrap px-1">
                         For Artists
                     </div>
-                    <div class="p-2">
+                    <div class="col">
                         Upload
                     </div>
-                    <div class="p-2">
+                    <div class="col d-flex flex-row align-items-center justify-content-center" style="border: .01rem solid black; min-width: 3rem">
+                        <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                            <img class="img-fluid rounded-circle" 
+                            src="https://via.placeholder.com/25" alt="placeholder">
+                        </figure>
+                        <h8>V</h8>
+                    </div>
+                    <div class="col">
+                        ...
+                    </div>
+                    <div class="col">
                         ...
                     </div>
                 </div>
             </div>
         </header>
-        <div class="d-flex flex-row"> 
-            <div class="col-8 overflow-hidden" style="border: .1rem solid blue;">
-                <div class="list-group">
+
+        <div class="d-flex flex-row z-1">
+
+            <div class="col-8" style="border: .1rem solid blue; height: 100vh; overflow: auto;">
+                <div class="list-group overflow-hidden">
                     
-                    <div class="list-group-item">
+                    <div class="list-group-item mx-3" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
                         <div class="d-block p-1">
                             <h2>Today's Mixes</h2>
                         </div>
@@ -99,7 +112,7 @@
 
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item mx-3" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
                         <div class="d-block p-1">
                             <h2>More of what you like</h2>
                         </div>
@@ -148,7 +161,7 @@
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item mx-3" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
                         <div class="d-block p-1">
                             <h2>Made for USERNAME</h2>
                         </div>
@@ -197,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item mx-3" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
                         <div class="d-block p-1">
                             <h2>Soundcloud Picks</h2>
                         </div>
@@ -246,7 +259,7 @@
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item mx-3" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
                         <div class="d-block p-1">
                             <h2>Recently Played</h2>
                         </div>
@@ -295,7 +308,7 @@
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item mx-3" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
                         <div class="d-block p-1">
                             <h2>Trending Music on SoundCloud</h2>
                         </div>
@@ -344,7 +357,7 @@
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item mx-3" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
                         <div class="d-block p-1">
                             <h2>Hip-Hop</h2>
                         </div>
@@ -395,140 +408,322 @@
                 </div>
             </div>
 
-            <div class="col overflow-hidden" style="border: .1rem solid blueviolet;">
-                <div class="d-flex flex-column">
-                    <div class="list-group p-2">
-                        <div class="col">
-                            <div class="list-group-item m-0 p-0" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
-                                <div class="d-inline-flex flex-row text-left align-items-center" style="border: .01rem solid red;">
-                                    <div class="d-block text-center w-3" style="border: .01rem solid black;">|||</div>
-                                    <h8 style="margin: 0; padding: 0;">New Tracks</h8>
-                                </div>
+            <div class="col sticky-right" style="border: .1rem solid blueviolet; overflow-y: auto; height: 100vh;">
+                <div class="list-group p-2 mx-2 my-1" style="border: .1rem solid yellow;">
+
+                    <div class="col mt-2">
+                        <div class="list-group-item m-0 p-0" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
+                            <div class="d-inline-flex flex-row text-left align-items-center">
+                                <div class="d-block text-center w-3 mx-2 my-1">|||</div>
+                                <h8 style="margin: 0; padding: 0;">New Tracks</h8>
                             </div>
-                            <div class="d-inline-flex flex-row p-2 gap-2 position-relative"
-                            style="min-width: 125%;">
-                                <div class="col text-center">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <h6>.....</h6>
+                        </div>
+                        <div class="d-inline-flex flex-row p-2 gap-2 position-relative"
+                        style="min-width: 125%;">
+                            <div class="col text-center">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <h6>.....</h6>
+                            </div>
+                            <div class="col text-center">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <h6>.....</h6>
+                            </div>
+                            <div class="col text-center">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <h6>.....</h6>
+                            </div>
+                            <div class="col text-center">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <h6>.....</h6>
+                            </div>
+                            <div class="col text-center">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <h6>.....</h6>
+                            </div>
+                            <div class="col text-center">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <h6>.....</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mt-4">
+                        <div class="list-group-item m-0 p-0" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
+                            <div class="d-inline-flex flex-row text-left align-items-center">
+                                <div class="d-block text-center w-3 mx-2 my-1">|||</div>
+                                <h8 style="margin: 0; padding: 0; text-wrap: nowrap; margin-right: 1rem;">Artists you should follow</h8>
+
+                                <div class="d-block text-center w-3 mx-2 my-1">C</div>
+                                <h8 style="margin: 0; padding: 0;">Refresh</h8>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <h8>Artist</h8>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                    </div>
                                 </div>
-                                <div class="col text-center">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <h6>.....</h6>
+                                <button type="button" class="btn btn-outline-dark btn-sm align-self-end p-0" style="margin-left: auto;">
+                                    <span>+</span>
+                                    <span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <h8>Artist</h8>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                    </div>
                                 </div>
-                                <div class="col text-center">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <h6>.....</h6>
+                                <button type="button" class="btn btn-outline-dark btn-sm align-self-end p-0" style="margin-left: auto;">
+                                    <span>+</span>
+                                    <span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid rounded-circle" 
+                                    src="https://via.placeholder.com/50" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <h8>Artist</h8>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                    </div>
                                 </div>
-                                <div class="col text-center">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <h6>.....</h6>
-                                </div>
-                                <div class="col text-center">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <h6>.....</h6>
-                                </div>
-                                <div class="col text-center">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <h6>.....</h6>
+                                <button type="button" class="btn btn-outline-dark btn-sm align-self-end p-0" style="margin-left: auto;">
+                                    <span>+</span>
+                                    <span>Follow</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col mt-4">
+                        <div class="list-group-item m-0 p-0" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
+                            <div class="d-inline-flex flex-row text-left align-items-center w-100">
+                                <div class="d-block text-center w-3 mx-2 my-1">E></div>
+                                <h8 style="margin: 0; padding: 0; text-wrap: nowrap; margin-right: 1rem;">2000 likes</h8>
+
+                                <h8 style="padding: 0; margin-left: auto;">View</h8>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid" 
+                                    src="https://via.placeholder.com/60" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <span class="m-0 p-0 text-muted">Artist</span>
+                                    <small class="m-0 p-0">Song Name</small>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
-                            <div class="list-group-item m-0 p-0" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
-                                <div class="d-inline-flex flex-row text-left align-items-center">
-                                    <div class="d-block text-center w-3" style="border: .01rem solid black;">|||</div>
-                                    <h8 style="margin: 0; padding: 0; text-wrap: nowrap; margin-right: 1rem;">Artists you should follow</h8>
-
-                                    <div class="d-block text-center w-3" style="border: .01rem solid black;">C</div>
-                                    <h8 style="margin: 0; padding: 0;">Refresh</h8>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <div class="d-flex flex-column px-2 mx-1">
-                                        <h8>Artist</h8>
-                                        <div class="d-flex flex-row gap-1">
-                                            <span>|||</span>
-                                            <span>1000</span>
-                                            <span>|||</span>
-                                            <span>50</span>
-                                        </div>
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid" 
+                                    src="https://via.placeholder.com/60" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <span class="m-0 p-0 text-muted">Artist</span>
+                                    <small class="m-0 p-0">Song Name</small>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
                                     </div>
-                                    <button type="button" class="btn btn-outline-dark btn-sm align-self-end p-0" style="margin-left: auto;">
-                                        <span>+</span>
-                                        <span>Follow</span>
-                                    </button>
                                 </div>
                             </div>
-
-                            <div class="col">
-                                <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <div class="d-flex flex-column px-2 mx-1">
-                                        <h8>Artist</h8>
-                                        <div class="d-flex flex-row gap-1">
-                                            <span>|||</span>
-                                            <span>1000</span>
-                                            <span>|||</span>
-                                            <span>50</span>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn btn-outline-dark btn-sm align-self-end p-0" style="margin-left: auto;">
-                                        <span>+</span>
-                                        <span>Follow</span>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
-                                    <figure class="figure rounded-circle m-0 p-0" style="border: .01rem solid black;">
-                                        <img class="img-fluid rounded-circle" 
-                                        src="https://via.placeholder.com/50" alt="placeholder">
-                                    </figure>
-                                    <div class="d-flex flex-column px-2 mx-1">
-                                        <h8>Artist</h8>
-                                        <div class="d-flex flex-row gap-1">
-                                            <span>|||</span>
-                                            <span>1000</span>
-                                            <span>|||</span>
-                                            <span>50</span>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn btn-outline-dark btn-sm align-self-end p-0" style="margin-left: auto;">
-                                        <span>+</span>
-                                        <span>Follow</span>
-                                    </button>
-                                </div>
-                            </div>
-
                         </div>
+
+                        <div class="col">
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid" 
+                                    src="https://via.placeholder.com/60" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <span class="m-0 p-0 text-muted">Artist</span>
+                                    <small class="m-0 p-0">Song Name</small>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mt-4">
+                        <div class="list-group-item m-0 p-0" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
+                            <div class="d-inline-flex flex-row text-left align-items-center w-100">
+                                <div class="d-block text-center w-3 mx-2 my-1">[-]</div>
+                                <h8 style="margin: 0; padding: 0; text-wrap: nowrap; margin-right: 1rem;">Listening history</h8>
+
+                                <h8 style="padding: 0; margin-left: auto;">View</h8>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid" 
+                                    src="https://via.placeholder.com/60" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <span class="m-0 p-0 text-muted">Artist</span>
+                                    <small class="m-0 p-0">Song Name</small>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid" 
+                                    src="https://via.placeholder.com/60" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <span class="m-0 p-0 text-muted">Artist</span>
+                                    <small class="m-0 p-0">Song Name</small>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-inline-flex flex-row text-left align-items-center py-2 w-100">
+                                <figure class="figure m-0 p-0" style="border: .01rem solid black;">
+                                    <img class="img-fluid" 
+                                    src="https://via.placeholder.com/60" alt="placeholder">
+                                </figure>
+                                <div class="d-flex flex-column px-2 mx-1">
+                                    <span class="m-0 p-0 text-muted">Artist</span>
+                                    <small class="m-0 p-0">Song Name</small>
+                                    <div class="d-flex flex-row gap-1">
+                                        <small>|||</small>
+                                        <small>1000</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                        <small>|||</small>
+                                        <small>50</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mt-4">
+                        <div class="list-group-item m-0 p-0" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
+                            <div class="d-inline-flex flex-row text-left align-items-center w-100">
+                                <h8 style="margin: 0; padding: 0; text-wrap: nowrap; margin-right: 1rem;">Go mobile</h8>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-flex flex-row align-items-start gap-2 py-2 mt-2 w-100">
+                            <div class="col-5 rounded" style="background-color: black; height: 2.5rem;"></div>
+                            <div class="col-6 rounded" style="background-color: black; height: 2.5rem;"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col mt-1">
+                        <div class="list-group-item my-1 p-0" style="border-top: none; border-left: none; border-right: none; border-radius: none;">
+                        </div>
+                        <small class="text-muted" style="font-size: .75rem;">Legal - Privacy - Cookie Policy - Cookie Manager - Imprint - Artist Resources - Blog - Charts - </small>
+                        <small style="font-size: .75rem;"><span style="color: blue;">Language:</span> English (US) </small>
                     </div>
                 </div>
             </div>
